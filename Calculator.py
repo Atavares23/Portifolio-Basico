@@ -79,7 +79,6 @@ entry3.grid(row=2, column=1, padx=10, pady=5)
 
 tk.Label(root, text="Operação:").grid(row=3, column=0, padx=10, pady=5)
 operacao_var = tk.StringVar(value="Adição")
-operacoes = ["Adição", "Subtração", "Multiplicação", "Divisão", "Média", "Raiz", "P.A"]
 tk.OptionMenu(root, operacao_var, *operacoes).grid(row=3, column=1, padx=10, pady=5)
 
 tk.Button(root, text="Calcular", command=calcular).grid(row=4, column=0, columnspan=2, pady=10)
